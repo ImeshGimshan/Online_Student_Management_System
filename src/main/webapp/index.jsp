@@ -2,12 +2,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="css/landing.css">
 </head>
 <body>
-<h1><%= "Hello World!" %>
-</h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
+    <div class="landing-container">
+        <div class="landing-title">Student Management System</div>
+        <div class="landing-desc">
+            Welcome to the Student Management System.<br>
+            Easily manage students, attendance, and results.<br>
+            Choose your portal to continue:
+        </div>
+        <div class="login-btns">
+            <a href="jsp/Login.jsp" class="landing-btn">Login</a>
+        </div>
+    </div>
 </body>
 </html>

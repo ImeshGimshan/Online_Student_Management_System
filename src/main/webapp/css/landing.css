@@ -1,0 +1,71 @@
+body {
+    background: #f5f7fa;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.landing-container {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    padding: 3rem 2rem 2.5rem 2rem;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem auto;
+}
+.landing-title {
+    color: #5c6bc0;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+.landing-desc {
+    color: #555;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 1.3rem;
+}
+.login-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
+}
+.landing-btn {
+    background: #5c6bc0;
+    color: #fff;
+    font-size: 1.15rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.1s;
+}
+.landing-btn:hover {
+    background: #3949ab;
+    transform: translateY(-2px) scale(1.03);
+}
+.landing-btn.student {
+    background: #43a047;
+}
+.landing-btn.student:hover {
+    background: #2e7031;
+}
+@media (max-width: 500px) {
+    .landing-container {
+        padding: 1.2rem 0.6rem;
+        max-width: 96vw;
+    }
+    .landing-title { font-size: 1.4rem; }
+}
